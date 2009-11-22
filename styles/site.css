@@ -8,6 +8,7 @@ body {
 	margin:0px;
 	font-size: 12px;
 	line-height: 1.5;
+	color: #333333;
 }
 a, a:visited {
 	color: #ad050a;
@@ -18,6 +19,40 @@ a:hover {
 	color: #000;
 	text-decoration: underline;
 }
+
+code {
+font-family: Consolas, "Courier New", Courier, Monospace; color: #555555;
+}
+
+pre{
+color: #555555;
+padding: 10px;
+border: 1px solid #dddddd;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+h3 {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+}
+
+thead th {
+background-color: #d1eafa;
+border-bottom: 1px solid #B4D8EF}
+
+th, td, caption {padding:4px 10px 4px 10px;}
+
+tr.even td {
+background-color: #f1f1f1;}
+
+
+
 /* Headings ----------------------------------------------------------------------------------------------*/
 
 div#logo h1 {
@@ -41,13 +76,9 @@ div#logo h1 span {
 	height: 82px;
 }
 div#main h2 {
-	font-size: 25px;
-	font-weight: bold;
 	margin: 0 0 10px 0;
 }
 div#right_content_sub h2 {
-	font-size: 25px;
-	font-weight: bold;
 	margin: 0 0 20px 0;
 	border-bottom: 1px solid #cccccc;
 }
@@ -97,6 +128,17 @@ ul#navbar li a, ul#navbar li span {
 	display:block;
 	padding: 0 10px 0 10px;
 }
+
+.cufon-active #navbar li a { /* for Cufon.replace('h1') */
+	font-size: 20px;
+	text-decoration: none;
+	padding: 0 12px 0 12px;
+}
+
+.cufon-active #navbar li{ /* for Cufon.replace('h1') */
+	font-size: 20px;
+}
+
 ul#navbar li a:hover {
 }
 ul#navbar li#active span {
@@ -142,11 +184,17 @@ div#download_btn a, div#download_btn a:link, div#download_btn a:visited {
 	width: 229px;
 	height: 85px;
 	background: url("../images/download_btn.gif") repeat-x 0 0;
+	cursor: pointer;
 }
 div#download_btn a:hover {
 	color: #fff;
 	background: url("../images/download_btn.gif") repeat-x 0 -85px;
 }
+
+div#download_btn a:active {
+	margin-top: 1px;
+}
+
 div#addon_btn span {
 	font-size: 30px;
 	font-weight:bold;
@@ -162,12 +210,18 @@ div#addon_btn a, div#addon_btn a:link, div#addon_btn a:visited {
 	height: 85px;
 	margin-left: 10px;
 	background: url("../images/addon_btn.gif") repeat-x 0 0;
+	cursor: pointer;
 }
 div#addon_btn a:hover {
 	color: #fff;
 	background: #333;
 	background: url("../images/addon_btn.gif") repeat-x 0 -85px;
 }
+
+div#addon_btn a:active {
+	margin-top: 1px;
+}
+
 ul#subnavbar {
 	list-style: none;
 	font-size: 16px;
@@ -216,6 +270,7 @@ ul#breadcrumbs li a, ul#breadcrumbs li span {
 ul#breadcrumbs li:first-child a {
 	background:url("../images/bcrumbs_left_first.png") no-repeat left center;
 }
+
 div#fastbar {
 	margin: 0 0 20px 0;
 }
@@ -227,6 +282,7 @@ div.news_item {
 }
 div.news_item h3 {
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	text-transform:none;
 	font-weight: bold;
 	color: #960407;
 	text-decoration: none;
@@ -254,6 +310,7 @@ div.knowledge_item {
 }
 div.knowledge_item h3 {
 	font: 12px/1.875 Arial, Helvetica, sans-serif;
+	text-transform:none;
 	font-weight: bold;
 	color: #960407;
 	text-decoration: none;
@@ -291,6 +348,7 @@ div.fastlink a {
 }
 div.fastlink a h3 {
 	color: #ad050a;
+	text-transform: none;
 	font-weight: bold;
 	margin-bottom: 4px;
 	font-size: 20px;
@@ -311,6 +369,11 @@ div#contribute span {
 div#mailing span {
 	background: url("../images/grey_letters.png") no-repeat 0px 7px;
 }
+
+div#download span {
+	background: url("../images/green_arrow.png") no-repeat 0px 7px;
+}
+
 div#footer {
 	border-top: 1px solid #ccc;
 	padding-top: 15px;
@@ -332,4 +395,8 @@ div#footer a:hover {
 div#copyright {
 	color: #848383;
 	text-align: right;
+}
+
+.cufon-active h2 { /* for Cufon.replace('h1') */
+font-size: 27px;
 }

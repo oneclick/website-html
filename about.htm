@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>RubyInstaller - About</title>
@@ -6,17 +6,22 @@
 <link rel="stylesheet" href="styles/blueprint/screen.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="styles/blueprint/print.css" type="text/css" media="print" />
 <link rel="stylesheet" href="styles/site.css" type="text/css" media="screen, projection, print" />
-<!--
-	<script type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
-	<script type="text/javascript" src="scripts/site.js"></script>
-	-->
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Myriad_400-Myriad_600.font.js"></script>
+<script type="text/javascript">
+    	Cufon.replace('h1', {textShadow: '#fff 0px 1px'});
+		Cufon.replace('h2');
+		Cufon.replace('#navbar li a',{hover: true});
+		Cufon.replace('#navbar li');
+    </script>
 </head>
 <body>
 <div id="page-sub">
 	<div id="header" class="container">
-		<div id="logo" class="span-10">
+		<div id="logo" class="span-10"> <a href="index.htm" title="To Homepage">
 			<h1>RubyInstaller <span> </span></h1>
-		</div>
+			</a> </div>
 		<div class="span-14 last">
 			<ul id="navbar">
 				<li id="active"><span href="http://wiki.github.com/oneclick/rubyinstaller">About</span> </li>
@@ -48,12 +53,70 @@
 				<p id="intro">This is a one-click, self-contained installer that contains the Ruby language itself, dozens of popular extensions and packages, a syntax-highlighting editor, an execution environment, and a help file that contains the full text of the book, Programming Ruby: The Pragmatic Programmer's Guide. </p>
 				<p>To install Ruby, check Download section, choose the version you would like, and click on the .exe link (under the name of the version) to download the installer. Use Windows Explorer to navigate to where you saved the .exe file and double-click on it to run the installer.</p>
 				<p>The Ruby Installer is currently available only for the Windows platform. However, an installer for OS X is under development and we would like to hear from any developer who would be interested in working on an Linux installer for Gnome and/or KDE. </p>
+				<h3>Heading H2</h3>
+				<p>Code can be highlighted with use of <code>&lt;code&gt;</code> tag. Text within this tag is written in monospace font.
+					For longer code text, you can use tag <code>&lt;pre&gt;</code>.</p>
+				<pre>gem install rails</pre>
+				<ul>
+					<li>First item </li>
+					<li>Second item</li>
+					<li>Third item</li>
+					<li>Fourth item</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Legend 1</th>
+							<th scope="col">Legend 2</th>
+							<th scope="col">Legend 3</th>
+							<th scope="col">Legend 4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+						</tr>
+						<tr class="even">
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+						</tr>
+						<tr>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+							<td>Lorem ipsum</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>In case you need siple citation: <cite>"I use tag &lt;cite&gt;".</cite> If you need bigger quotation, just use tag <code>&lt;blockquote&gt;</code>.</p>
+				<blockquote>
+					<p>This is simple citation. Not very fancy, but nice and clean. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+				</blockquote>
+				<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Duis in porta arcu. Nulla <em>quis</em> lectus sed elit fermentum vulputate sed at nulla. Cras nec nisi at dui mattis cursus. Phasellus eget dolor dolor, vitae scelerisque metus. Morbi sit amet nibh lacus, sed placerat nisl. </p>
 			</div>
+		
 		</div>
+		<div id="fastbar" class="span-24 last">
+		<div id="contribute" class="fastlink span-8"></div>
+			
+					<div id="download" class="fastlink span-8"> <a href="http://wiki.github.com/oneclick/rubyinstaller"> <span>
+						<h3>Download</h3>
+						<p>I want to download newest version.</p>
+						</span> </a> </div>
+					<div id="mailing" class="fastlink span-8 last"> <a href="http://groups.google.com/group/rubyinstaller"> <span>
+						<h3>Mailing List</h3>
+						<p>How can I stay up-to-date?</p>
+						</span> </a> </div>
+					</div>	
 		<div class="span-24">
 			<ul id="breadcrumbs">
-				<li><a href="">Homepage</a></li>
-				<li><a href="">About</a></li>
+				<li><a href="index.htm" title="To Homepage">Homepage</a></li>
+				<li><a href="about.htm" title="To About">About</a></li>
 				<li><span>Introduction</span></li>
 			</ul>
 		</div>
