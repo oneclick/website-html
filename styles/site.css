@@ -16,7 +16,7 @@ a, a:visited {
 	cursor: pointer;
 }
 a:hover {
-	color: #000;
+	color: #333333;
 	text-decoration: underline;
 }
 
@@ -139,8 +139,6 @@ ul#navbar li a, ul#navbar li span {
 	font-size: 20px;
 }
 
-ul#navbar li a:hover {
-}
 ul#navbar li#active span {
 	color: #ffffff;
 	background:url("../images/menu_active_left.png") no-repeat left center;
@@ -272,11 +270,9 @@ ul#breadcrumbs li:first-child a {
 }
 
 div#fastbar {
-	margin: 0 0 20px 0;
+	margin: 0 0 30px 0;
 }
-div#fastbar a {
-	text-decoration: none;
-}
+
 div.news_item {
 	padding: 0 20px 20px 0;
 }
@@ -342,35 +338,32 @@ div.fastlink p {
 	padding: 0;
 	font-size: 14px;
 }
-div.fastlink a {
-	display: block;
-	color: #333333;
-}
-div.fastlink a h3 {
-	color: #ad050a;
-	text-transform: none;
-	font-weight: bold;
-	margin-bottom: 4px;
-	font-size: 20px;
-}
-div.fastlink a:hover h3 {
-	text-decoration: underline;
-	color: #333333;
-}
-div.fastlink span {
-	background: url("../images/green_question.png") no-repeat 0px 7px;
-	display: block;
-	padding: 10px 0 10px 85px;
-	height:55px;
-}
-div#contribute span {
-	background: url("../images/green_plus.png") no-repeat 0px 7px;
-}
-div#mailing span {
-	background: url("../images/grey_letters.png") no-repeat 0px 7px;
+
+div.fastlink h3, div.fastlink p {
+margin-left: 85px;
 }
 
-div#download span {
+div.fastlink h3 {
+font-size: 20px;
+font-weight: bold;
+text-transform: none;
+margin-bottom: 4px;
+}
+
+
+
+div#contribute{
+	background: url("../images/green_plus.png") no-repeat 0px 7px;
+}
+div#mailing{
+	background: url("../images/grey_letters.png") no-repeat 0px 7px;
+}
+div#questions{
+	background: url("../images/green_question.png") no-repeat 0px 7px;
+}
+
+
+div#download{
 	background: url("../images/green_arrow.png") no-repeat 0px 7px;
 }
 
