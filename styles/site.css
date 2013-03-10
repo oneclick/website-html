@@ -33,7 +33,7 @@ border: 1px solid #dddddd;
 h2 {
 	font-size: 25px;
 	font-weight: bold;
-	
+
 }
 
 h3 {
@@ -102,6 +102,7 @@ div#left_content_sub {
 	padding-bottom: 20px;
 	background: #ffffff url(../images/bg_subnav.png) no-repeat top right;
 	height: 390px;
+	overflow-y: auto;
 }
 div#right_content {
 	padding-bottom: 20px;
